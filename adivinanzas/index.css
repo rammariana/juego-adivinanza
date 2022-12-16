@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#4ce6fb, #894cfb);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.start {
+  /*Boton inicio*/
+  width: 6rem;
+  height: 3rem;
+  background-color: #f91818;
+  font-size: 1.2em;
+  padding: 0.5em;
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  animation: latido ease 1.5s infinite;
+  cursor: pointer;
+  box-shadow: 1px 1px 7px 1px #6025ce;
+  text-align: center;
+}
+
+@keyframes latido {
+  100% {
+    transform: scale(1.1);
+  }
+}
+.start:hover,
+.end:hover {
+  background-color: #fc4747;
+}
+
+.end {
+  width: 6rem;
+  height: 3rem;
+  background-color: #f91818;
+  font-size: 1.5em;
+  padding: 0.5em;
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  animation: latido ease 1.5s infinite;
+  box-shadow: 1px 1px 7px 1px #6025ce;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+img {
+  min-width: 50%;
+  min-height: auto;
+}
+
+.section-play {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+li {
+  background-color: rgb(8, 24, 245);
+  color: #fff;
+  min-width: 30vw;
+  min-height: auto;
+  padding: 0.5em;
+  border-radius: 1.5em;
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/*input {
+  display: none;
+}
+*/
+.good {
+  background-color: #18f93e;
+}
+
+.bad {
+  background-color: #f94f18;
+}
+
+.correct {
+  background-color: #18f93e;
+  width: 40%;
+  height: auto;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.wrong {
+  background-color: #f94f18;
+  width: 40%;
+  height: auto;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.gif {
+  border: none;
+}
